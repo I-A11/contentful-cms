@@ -1,4 +1,38 @@
+import { useFetchProjects } from "./fetchProjects";
+
 const Project = () => {
-  return <div>Project</div>;
+  const { loading, projects } = useFetchProjects();
+
+  if (loading) {
+    return (
+      <section className="projects">
+        <h2>loading...</h2>
+      </section>
+    );
+  }
+  return (
+    <section className="projects">
+      <div className="title">
+        <h2>projects</h2>
+        <div className="title-underline"></div>
+      </div>
+      <div className="projects-center">
+        {projects.map((project) => {
+          const { title, id, url, img } = project;
+          return (
+            <a
+              key={id}
+              href={url}
+              target="_blank"
+              rel="noreferrer"
+              className="project"
+            >
+              <img src={img} alt={title} className="img" />
+            </a>
+          );
+        })}
+      </div>
+    </section>
+  );
 };
 export default Project;

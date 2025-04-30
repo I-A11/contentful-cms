@@ -7,10 +7,11 @@ const Hero = () => {
         <div className="hero-title">
           <h1>Contentful CMS</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-            dicta commodi facilis perferendis ab iusto aliquam reiciendis
-            recusandae ducimus, blanditiis ea veritatis delectus deleniti
-            laudantium illo nobis ex repellendus rationeksksk
+            Specialising in front-end development, adept at creating responsive
+            web applications. Proficient in modern frameworks and technologies
+            to deliver seamless user experiences. Demonstrated ability in
+            translating designs into pixel-perfect interfaces with a keen eye
+            for detail.
           </p>
         </div>
         <div className="img-container">
